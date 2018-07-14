@@ -71,8 +71,7 @@ html {
   -webkit-tap-highlight-color: transparent; }
 
 body {
-  background: rgb(226,241,248);
-  background: linear-gradient(180deg, rgba(226,241,248,1) 0%, rgba(128,142,149,1) 100%);
+  background-color: #E5E5E5;
   color: #3C4858;
   margin: 0;
   font-size: 1rem;
