@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="57x57" href="%PUBLIC_URL%/ico/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="%PUBLIC_URL%/ico/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="%PUBLIC_URL%/ico/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="%PUBLIC_URL%/ico/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="%PUBLIC_URL%/ico/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="%PUBLIC_URL%/ico/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="%PUBLIC_URL%/ico/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="%PUBLIC_URL%/ico/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="%PUBLIC_URL%/ico/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="%PUBLIC_URL%/ico/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="%PUBLIC_URL%/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="%PUBLIC_URL%/ico/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="%PUBLIC_URL%/ico/favicon-16x16.png">
+    <link rel="manifest" href="%PUBLIC_URL%/ico/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="%PUBLIC_URL%/ico/ms-icon-144x144.png">
+    <link rel="manifest" href="%PUBLIC_URL%/ico/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/ico/favicon.ico">
+
+    <script type="text/javascript" src="https://addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+
+    <!--     Fonts and icons     -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="/flipclock.css">
+
+    <style>
+    .background {
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    </style>
+    <title>The JUMP Event</title>
+  </head>
+  <body>
+
+    <div id="root"></div>
+    <canvas class="background"></canvas>
+
+
+  <script src="/particles.js"></script>
+
+  <script type="text/javascript">
+  if (typeof MauticSDKLoaded == 'undefined') {
+      var MauticSDKLoaded = true;
+      var head            = document.getElementsByTagName('head')[0];
+      var script          = document.createElement('script');
+      script.type         = 'text/javascript';
+      script.src          = 'http://phpstack-123828-394161.cloudwaysapps.com/media/js/mautic-form.js';
+      script.onload       = function() {
+          MauticSDK.onLoad();
+      };
+      head.appendChild(script);
+      var MauticDomain = 'http://phpstack-123828-394161.cloudwaysapps.com';
+      var MauticLang   = {
+          'submittingMessage': "Loading..."
+      }
+  }
+</script>
+
+
+    <script src="/jquery.js"></script>
+		<script src="/flipclock.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+	   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+    <script>
+
+    window.onload = function() {
+      Particles.init({
+        selector: '.background',
+        color: ['#f50057', '#404B69'],
+        maxParticles: 200,
+        sizeVariations: 3,
+        connectParticles: true,
+        responsive: [{
+          breakpoint: 700,
+          options: {
+            color: ['#f50057', '#404B69'],
+            maxParticles: 80,
+            connectParticles: false
+          }
+        }]
+      });
+    };
+
+      const deadline = 'oct 02 2018 09:00';
+      const time = Date.parse(deadline) - Date.parse(new Date());
+      const days = Math.floor(time/(1000));
+
+      function isMobileDevice() {
+          return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+      };
+
+      jQuery(function($){
+        // if (isMobileDevice = true){
+        var clock = $('#countdownClockP').FlipClock( days, {
+		        clockFace: 'DailyCounter',
+	          countdown: true,
+            showMinutes: false,
+            showSeconds: false,
+            language: 'es-es'
+        });
+// }else {
+//   var clock = $('.countdownClock').FlipClock( days, {
+//       clockFace: 'DailyCounter',
+//       countdown: true,
+//       showMinutes: false,
+//       showSeconds: false,
+//       language: 'es-es'
+//   });
+// }
+      });
+
+
+
+
+      		$(document).mousemove(function(e) {
+      			parallaxIt(e, "#Layer_1", -200);
+      		});
+
+      		function parallaxIt(e, target, movement) {
+      			var $this = $('body');
+      			var relX = e.pageX - $this.offset().left;
+      			var relY = (e.pageY - $this.offset().top)/3;
+
+      			// TweenMax.to(target, 1, {
+      			// 	x: (relX - $this.width() / 2) / $this.width() * movement,
+      			// 	y: (relY - $this.height() / 3) / $this.height() * movement
+      			// });
+      		}
+
+    </script>
+
+
+  </body>
+</html>
