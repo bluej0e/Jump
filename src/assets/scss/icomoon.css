@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('icomoon.eot?u8zn55');
+  src:  url('icomoon.eot?u8zn55#iefix') format('embedded-opentype'),
+    url('icomoon.ttf?u8zn55') format('truetype'),
+    url('icomoon.woff?u8zn55') format('woff'),
+    url('icomoon.svg?u8zn55#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-jumpMan .path1:before {
+  content: "\41";
+  color: rgb(255, 0, 0);
+}
+.icon-jumpMan .path2:before {
+  content: "\42";
+  margin-left: -0.896484375em;
+  color: rgb(255, 0, 0);
+}
+.icon-jumpMan .path3:before {
+  content: "\43";
+  margin-left: -0.896484375em;
+  color: rgb(51, 51, 51);
+}
+.icon-jumpMan .path4:before {
+  content: "\44";
+  margin-left: -0.896484375em;
+  color: rgb(51, 51, 51);
+}
+.icon-jumpMan .path5:before {
+  content: "\45";
+  margin-left: -0.896484375em;
+  color: rgb(51, 51, 51);
+}
+.icon-jumpMan .path6:before {
+  content: "\46";
+  margin-left: -0.896484375em;
+  color: rgb(51, 51, 51);
+}
+.icon-jumpMan .path7:before {
+  content: "\47";
+  margin-left: -0.896484375em;
+  color: rgb(51, 51, 51);
+}
+.icon-jumpMan .path8:before {
+  content: "\48";
+  margin-left: -0.896484375em;
+  color: rgb(51, 51, 51);
+}
+.icon-jumpMan .path9:before {
+  content: "\49";
+  margin-left: -0.896484375em;
+  color: rgb(51, 51, 51);
+}
+.icon-jumpMan .path10:before {
+  content: "\4a";
+  margin-left: -0.896484375em;
+  color: rgb(51, 51, 51);
+}
+.icon-jumpMan .path11:before {
+  content: "\4b";
+  margin-left: -0.896484375em;
+  color: rgb(51, 51, 51);
+}
+.icon-jumpMan .path12:before {
+  content: "\4c";
+  margin-left: -0.896484375em;
+  color: rgb(51, 51, 51);
+}
+.icon-jumpMan .path13:before {
+  content: "\4d";
+  margin-left: -0.896484375em;
+  color: rgb(51, 51, 51);
+}
+.icon-jumpMan .path14:before {
+  content: "\4e";
+  margin-left: -0.896484375em;
+  color: rgb(51, 51, 51);
+}
+.icon-jumpLogo .path1:before {
+  content: "\32";
+  color: rgb(230, 230, 230);
+}
+.icon-jumpLogo .path2:before {
+  content: "\33";
+  margin-left: -1.4609375em;
+  color: rgb(230, 230, 230);
+}
+.icon-jumpLogo .path3:before {
+  content: "\34";
+  margin-left: -1.4609375em;
+  color: rgb(230, 230, 230);
+}
+.icon-jumpLogo .path4:before {
+  content: "\35";
+  margin-left: -1.4609375em;
+  color: rgb(230, 230, 230);
+}
+.icon-jumpLogo .path5:before {
+  content: "\36";
+  margin-left: -1.4609375em;
+  color: rgb(255, 0, 0);
+}
+.icon-1up:before {
+  content: "\31";
+}
